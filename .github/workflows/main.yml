@@ -1,0 +1,17 @@
+name: Create Output File
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v2
+
+    - name: print
+      run: echo "Hello action github!"
