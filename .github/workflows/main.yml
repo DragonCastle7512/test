@@ -3,7 +3,6 @@ name: Compile Java
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
 
 jobs:
   build-java:
@@ -32,4 +31,3 @@ jobs:
         with:
           name: compiled-class
           path: Main.class
-
